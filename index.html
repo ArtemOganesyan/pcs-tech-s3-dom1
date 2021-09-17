@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Demo</title>
+        <script>
+            window.onload = function() {
+                const heading = document.createElement("h1");
+                const h_text = document.createTextNode("Our title");
+                console.log("Created heding text :", h_text);
+                heading.appendChild(h_text);
+                console.log("Heading with appended text element: ", heading);
+                document.body.appendChild(heading);
+                console.log(document.body);
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
